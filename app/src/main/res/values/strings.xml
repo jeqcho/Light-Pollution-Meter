@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Light Pollution Meter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">
+        <big>Measure</big>\n
+            1. Point your camera to the sky away from any light sources, including the Moon.\n
+
+            2. Press "MEASURE".\n
+
+            3. Three readings are taken and then averaged.\n
+
+            4. Surface brightness of the sky is calculated.\n\n
+        <big>Calibrate</big>\n
+        <b>Dark Frame</b>\n
+            1. Cover the lens of the camera as completely as possible. We recommend putting it inside a bag or box.\n
+            2. Press "MEASURE".\n
+            3. Three readings are taken and then averaged.\n
+            4. Sum of pixel values are recorded to be used in measurement.\n
+        <b>Moon</b>\n
+            1. Point the camera to the Moon.\n
+            2. Press "MEASURE".\n
+            3. Readings will only be taken if the "Max" value is less than 255. To prevent pixel saturation, jiggle your phone to smear the light to more pixels.\n
+            4. Three valid readings will be recorded and used in the calculation of the zero point.\n
+        For more information, see the GitHub repository https://github.com or the research paper at.\n
+    </string>
+</resources>
