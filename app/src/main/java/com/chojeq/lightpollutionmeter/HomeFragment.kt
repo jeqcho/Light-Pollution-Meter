@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
+import com.chojeq.lightpollutionmeter.R
 
 class HomeFragment : Fragment() {
 

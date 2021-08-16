@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
+import com.chojeq.lightpollutionmeter.R
 import java.util.*
 import java.util.Calendar.*
 
@@ -16,7 +17,8 @@ class CalibrateFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val root: View =  inflater.inflate(R.layout.fragment_calibrate, container, false)
-        val toMeasure = CalibrateFragmentDirections.actionCalibrateFragmentToMeasureFragment()
+        val toMeasure =
+            com.chojeq.lightpollutionmeter.CalibrateFragmentDirections.actionCalibrateFragmentToMeasureFragment()
         toMeasure.isCalibrate = true
         root.findViewById<Button>(R.id.dark_button).setOnClickListener {
             toMeasure.calibrateType = "dark"

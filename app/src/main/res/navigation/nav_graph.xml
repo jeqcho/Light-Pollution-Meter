@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.lightpollutionmeter.HomeFragment"
+        android:name="com.chojeq.lightpollutionmeter.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.lightpollutionmeter.ResultFragment"
+        android:name="com.chojeq.lightpollutionmeter.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/calibrateFragment"
-        android:name="com.example.lightpollutionmeter.CalibrateFragment"
+        android:name="com.chojeq.lightpollutionmeter.CalibrateFragment"
         android:label="fragment_calibrate"
         tools:layout="@layout/fragment_calibrate" >
         <action
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/calibrateDoneFragment"
-        android:name="com.example.lightpollutionmeter.CalibrateDoneFragment"
+        android:name="com.chojeq.lightpollutionmeter.CalibrateDoneFragment"
         android:label="fragment_calibrate_done"
         tools:layout="@layout/fragment_calibrate_done" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/measureFragment"
-        android:name="com.example.lightpollutionmeter.MeasureFragment"
+        android:name="com.chojeq.lightpollutionmeter.MeasureFragment"
         android:label="fragment_measure"
         tools:layout="@layout/fragment_measure" >
         <action
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/SQMFragment"
-        android:name="com.example.lightpollutionmeter.SQMFragment"
+        android:name="com.chojeq.lightpollutionmeter.SQMFragment"
         android:label="fragment_s_q_m"
         tools:layout="@layout/fragment_s_q_m" >
         <action
@@ -90,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.lightpollutionmeter.AboutFragment"
+        android:name="com.chojeq.lightpollutionmeter.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" >
         <action

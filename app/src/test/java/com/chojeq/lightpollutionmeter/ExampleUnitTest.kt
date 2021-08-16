@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import org.junit.Test
 

@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MeasureFragment">
+    tools:context="com.chojeq.lightpollutionmeter.MeasureFragment">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import android.Manifest
 import android.content.Context
@@ -8,7 +8,7 @@ import android.hardware.camera2.CameraManager
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.lightpollutionmeter.databinding.ActivityMainBinding
+import com.chojeq.lightpollutionmeter.databinding.ActivityMainBinding
 import kotlin.math.atan
 
 

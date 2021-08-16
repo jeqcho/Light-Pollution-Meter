@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import android.content.Context
 import android.os.Bundle
@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.findNavController
+import com.chojeq.lightpollutionmeter.R
 import kotlin.math.log
 import kotlin.math.log10
 
@@ -23,7 +24,7 @@ class ResultFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         val binding = inflater.inflate(R.layout.fragment_result, container, false)
-        val args = ResultFragmentArgs.fromBundle(requireArguments())
+        val args = com.chojeq.lightpollutionmeter.ResultFragmentArgs.fromBundle(requireArguments())
         val preSum = args.sum
         val dark =  activity?.getPreferences(Context.MODE_PRIVATE)!!.getInt("dark",-1)
         val zeroPoint =  activity?.getPreferences(Context.MODE_PRIVATE)!!.getFloat("zeroPoint", 30F)

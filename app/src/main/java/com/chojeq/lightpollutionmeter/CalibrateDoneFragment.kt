@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import android.content.Context
 import android.hardware.camera2.CameraCharacteristics
@@ -13,7 +13,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.findNavController
-import com.example.lightpollutionmeter.MainActivity.Companion.TAG
+import com.chojeq.lightpollutionmeter.MainActivity.Companion.TAG
+import com.chojeq.lightpollutionmeter.R
 import java.util.*
 import kotlin.math.atan
 import kotlin.math.log10
@@ -26,7 +27,8 @@ class CalibrateDoneFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = inflater.inflate(R.layout.fragment_calibrate_done, container, false)
-        val args = CalibrateDoneFragmentArgs.fromBundle(requireArguments())
+        val args =
+            com.chojeq.lightpollutionmeter.CalibrateDoneFragmentArgs.fromBundle(requireArguments())
 
         binding.findViewById<Button>(R.id.home_button).setOnClickListener {
             it.findNavController().navigate(R.id.action_calibrateDoneFragment_to_homeFragment)

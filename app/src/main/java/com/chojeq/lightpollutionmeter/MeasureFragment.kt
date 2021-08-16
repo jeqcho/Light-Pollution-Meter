@@ -1,4 +1,4 @@
-package com.example.lightpollutionmeter
+package com.chojeq.lightpollutionmeter
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -29,6 +29,7 @@ import androidx.camera.view.PreviewView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import com.chojeq.lightpollutionmeter.R
 import java.nio.ByteBuffer
 import java.util.*
 import java.util.concurrent.ExecutorService
@@ -42,7 +43,7 @@ class MeasureFragment : Fragment(), SensorEventListener {
 
     private lateinit var binding: View
     private lateinit var cameraExecutor: ExecutorService
-    private lateinit var args: MeasureFragmentArgs
+    private lateinit var args: com.chojeq.lightpollutionmeter.MeasureFragmentArgs
 
     private lateinit var sensorManager: SensorManager
     private val accelerometerReading = FloatArray(3)
@@ -97,7 +98,7 @@ class MeasureFragment : Fragment(), SensorEventListener {
     ): View? {
         // Inflate the layout for this fragment
         binding = inflater.inflate(R.layout.fragment_measure, container, false)
-        args = MeasureFragmentArgs.fromBundle(requireArguments())
+        args = com.chojeq.lightpollutionmeter.MeasureFragmentArgs.fromBundle(requireArguments())
         binding.findViewById<Button>(R.id.capture_button).isClickable = true
         binding.findViewById<Button>(R.id.capture_button).text = "MEASURE"
         binding.findViewById<Button>(R.id.capture_button).setOnClickListener {
@@ -181,14 +182,14 @@ class MeasureFragment : Fragment(), SensorEventListener {
                 Log.i(TAG, "DONE Measure")
                 if (args.isCalibrate) {
                     binding.findNavController().navigate(
-                        MeasureFragmentDirections.actionMeasureFragmentToCalibrateDoneFragment(
+                        com.chojeq.lightpollutionmeter.MeasureFragmentDirections.actionMeasureFragmentToCalibrateDoneFragment(
                             args.calibrateType,
                             result
                         )
                     )
                 } else {
                     binding.findNavController().navigate(
-                        MeasureFragmentDirections.actionMeasureFragmentToResultFragment(
+                        com.chojeq.lightpollutionmeter.MeasureFragmentDirections.actionMeasureFragmentToResultFragment(
                             result
                         )
                     )
