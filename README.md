@@ -15,5 +15,6 @@ In recent years, many accessible light pollution measurement methods are introdu
 - [Short paper](https://drive.google.com/file/d/177zfkqyieAXbZgJEfdJpwL3a6cdHlF66/view?usp=sharing)
 - [Full paper](https://drive.google.com/file/d/10wXDEiaP3Cp8eEAhlSJOvJIwVt1ebWIN/view?usp=sharing)
 - [Winner of the Universiti Malaya Virtual Science Fair 2021 (UMVSF)](https://businessscfair.wixsite.com/virtualsciencefair/my-stem-competition)
+- [Google Play Store (Open Testing)](https://play.google.com/apps/test/com.chojeq.lightpollutionmeter/1)
 
 
