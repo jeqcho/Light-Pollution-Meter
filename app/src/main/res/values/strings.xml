@@ -21,8 +21,10 @@
             1. Point the camera to the Moon.\n
             2. Press "MEASURE".\n
             3. Readings will only be taken if the "Max" value is less than 255. To prevent pixel saturation, jiggle your phone to smear the light to more pixels.\n
-            4. Three valid readings will be recorded and used in the calculation of the zero point.\n
-        For more information, see the following links
+            4. Three valid readings will be recorded and used in the calculation of the zero point.\n\n
+
+        <big>Contact</big>\n
+        Please contact chooijqweb@gmail.com if you would like to contribute to this research, either as a tester, developer or light pollution expert. For more information, see the following links
     </string>
     <string name="github_link"><a href="https://github.com/jeqcho/Light-Pollution-Meter">GitHub repository</a></string>
     <string name="paper_link"><a href="https://drive.google.com/file/d/10wXDEiaP3Cp8eEAhlSJOvJIwVt1ebWIN/view?usp=sharing">Full paper</a></string>
