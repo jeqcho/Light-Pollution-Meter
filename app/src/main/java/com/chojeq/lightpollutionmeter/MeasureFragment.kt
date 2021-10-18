@@ -43,7 +43,7 @@ class MeasureFragment : Fragment(), SensorEventListener {
 
     private lateinit var binding: View
     private lateinit var cameraExecutor: ExecutorService
-    private lateinit var args: com.chojeq.lightpollutionmeter.MeasureFragmentArgs
+    private lateinit var args: MeasureFragmentArgs
 
     private lateinit var sensorManager: SensorManager
     private val accelerometerReading = FloatArray(3)
@@ -76,17 +76,25 @@ class MeasureFragment : Fragment(), SensorEventListener {
             override fun onCameraAvailable(cameraId: String) {
                 super.onCameraAvailable(cameraId)
 
+                Toast.makeText(
+                    activity,
+                    "The camera with id $cameraId is available",
+                    Toast.LENGTH_SHORT
+                ).show()
+
                 Log.i(TAG, "available: $cameraId")
             }
 
             override fun onCameraUnavailable(cameraId: String) {
                 super.onCameraUnavailable(cameraId)
 
-                Log.i(TAG, "unavailable: $cameraId")
+                Toast.makeText(
+                    activity,
+                    "The camera with id $cameraId is unavailable",
+                    Toast.LENGTH_SHORT
+                ).show()
 
-                activity?.getPreferences(Context.MODE_PRIVATE)!!.edit().apply {
-                    putString("cameraId", cameraId)
-                }.apply()
+                Log.i(TAG, "unavailable: $cameraId")
             }
         }, Handler(Looper.getMainLooper()))
 
@@ -98,7 +106,7 @@ class MeasureFragment : Fragment(), SensorEventListener {
     ): View? {
         // Inflate the layout for this fragment
         binding = inflater.inflate(R.layout.fragment_measure, container, false)
-        args = com.chojeq.lightpollutionmeter.MeasureFragmentArgs.fromBundle(requireArguments())
+        args = MeasureFragmentArgs.fromBundle(requireArguments())
         binding.findViewById<Button>(R.id.capture_button).isClickable = true
         binding.findViewById<Button>(R.id.capture_button).text = "MEASURE"
         binding.findViewById<Button>(R.id.capture_button).setOnClickListener {
@@ -182,14 +190,14 @@ class MeasureFragment : Fragment(), SensorEventListener {
                 Log.i(TAG, "DONE Measure")
                 if (args.isCalibrate) {
                     binding.findNavController().navigate(
-                        com.chojeq.lightpollutionmeter.MeasureFragmentDirections.actionMeasureFragmentToCalibrateDoneFragment(
+                        MeasureFragmentDirections.actionMeasureFragmentToCalibrateDoneFragment(
                             args.calibrateType,
                             result
                         )
                     )
                 } else {
                     binding.findNavController().navigate(
-                        com.chojeq.lightpollutionmeter.MeasureFragmentDirections.actionMeasureFragmentToResultFragment(
+                        MeasureFragmentDirections.actionMeasureFragmentToResultFragment(
                             result
                         )
                     )
