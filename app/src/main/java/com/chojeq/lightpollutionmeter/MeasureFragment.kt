@@ -76,23 +76,11 @@ class MeasureFragment : Fragment(), SensorEventListener {
             override fun onCameraAvailable(cameraId: String) {
                 super.onCameraAvailable(cameraId)
 
-                Toast.makeText(
-                    activity,
-                    "The camera with id $cameraId is available",
-                    Toast.LENGTH_SHORT
-                ).show()
-
                 Log.i(TAG, "available: $cameraId")
             }
 
             override fun onCameraUnavailable(cameraId: String) {
                 super.onCameraUnavailable(cameraId)
-
-                Toast.makeText(
-                    activity,
-                    "The camera with id $cameraId is unavailable",
-                    Toast.LENGTH_SHORT
-                ).show()
 
                 Log.i(TAG, "unavailable: $cameraId")
             }

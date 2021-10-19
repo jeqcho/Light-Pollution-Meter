@@ -7,13 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.chojeq.lightpollutionmeter.MeasureFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <TextView
         android:id="@+id/image_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Camera Loading..."
+        android:text="Camera Loading... (Wait 10 seconds)"
         android:textColor="@android:color/holo_red_light"
         android:translationZ="1sp"
         app:layout_constraintBottom_toTopOf="@+id/capture_button"
