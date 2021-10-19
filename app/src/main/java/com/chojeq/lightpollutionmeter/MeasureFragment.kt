@@ -75,6 +75,9 @@ class MeasureFragment : Fragment(), SensorEventListener {
         manager.registerAvailabilityCallback(object : AvailabilityCallback() {
             override fun onCameraAvailable(cameraId: String) {
                 super.onCameraAvailable(cameraId)
+                activity?.getPreferences(Context.MODE_PRIVATE)!!.edit().apply {
+                    putString("cameraId", cameraId)
+                }.apply()
 
                 Log.i(TAG, "available: $cameraId")
             }
